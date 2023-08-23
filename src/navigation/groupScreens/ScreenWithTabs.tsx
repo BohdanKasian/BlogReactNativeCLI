@@ -44,7 +44,7 @@ const ScreenWithTabs = () => {
       }}
     >
       <Screen
-        name={ScreensList.Root}
+        name={ScreensList.Main}
         component={MainScreen}
         options={{
           tabBarIcon: ({ focused }) => <BottomTab focused={focused} Icon={Bellicon} label="Posts" />,

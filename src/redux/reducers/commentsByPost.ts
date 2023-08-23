@@ -1,64 +1,67 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { AllPostsType } from "../../../types/allPosts";
 import { EnumStatusTypes } from "../../../types/statusType";
-import { createPost, deletePost, fetchPosts, updatePost } from "../../api/postsThunk";
+import { CommentType } from "../../../types/comments";
+import { createComment, deleteComment, fetchComments, updateComment } from "../../api/commentsThunk";
 
 const allPostsSlice = createSlice({
-  name: "allPosts",
+  name: "commentsByPost",
   initialState: {
-    posts: [] as AllPostsType,
+    comments: [] as CommentType[],
     status: EnumStatusTypes.idle,
     error: null as string | null,
   },
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(fetchPosts.pending, (state) => {
+      .addCase(fetchComments.pending, (state) => {
         state.status = EnumStatusTypes.loading;
       })
-      .addCase(fetchPosts.fulfilled, (state, action) => {
+      .addCase(fetchComments.fulfilled, (state, action) => {
         state.status = EnumStatusTypes.succeeded;
-        state.posts = action.payload;
+        const { data, postId } = action.payload;
+        state.comments = data.filter((item: CommentType) => item.postId === postId);
       })
-      .addCase(fetchPosts.rejected, (state, action) => {
+      .addCase(fetchComments.rejected, (state, action) => {
+        state.status = EnumStatusTypes.failed;
+        console.log("ID", action.error.message);
+        state.error = action.error.message ?? "An error occurred.";
+      })
+      .addCase(createComment.pending, (state) => {
+        state.status = EnumStatusTypes.loading;
+      })
+      .addCase(createComment.fulfilled, (state, action) => {
+        state.status = EnumStatusTypes.succeeded;
+        state.comments.push(action.payload);
+      })
+      .addCase(createComment.rejected, (state, action) => {
         state.status = EnumStatusTypes.failed;
         state.error = action.error.message ?? "An error occurred.";
       })
-      .addCase(createPost.pending, (state) => {
+      .addCase(updateComment.pending, (state) => {
         state.status = EnumStatusTypes.loading;
       })
-      .addCase(createPost.fulfilled, (state, action) => {
+      .addCase(updateComment.fulfilled, (state, action) => {
         state.status = EnumStatusTypes.succeeded;
-        state.posts.push(action.payload);
-      })
-      .addCase(createPost.rejected, (state, action) => {
-        state.status = EnumStatusTypes.failed;
-        state.error = action.error.message ?? "An error occurred.";
-      })
-      .addCase(updatePost.pending, (state) => {
-        state.status = EnumStatusTypes.loading;
-      })
-      .addCase(updatePost.fulfilled, (state, action) => {
-        state.status = EnumStatusTypes.succeeded;
-        const updatedPost = action.payload;
-        const index = state.posts.findIndex((post) => post.id === updatedPost.id);
+        const updatedComment = action.payload;
+        const index = state.comments.findIndex((post) => post.id === updatedComment.id);
         if (index !== -1) {
-          state.posts[index] = updatedPost;
+          state.comments[index] = updatedComment;
         }
       })
-      .addCase(updatePost.rejected, (state, action) => {
+      .addCase(updateComment.rejected, (state, action) => {
         state.status = EnumStatusTypes.failed;
         state.error = action.error.message ?? "An error occurred.";
       })
-      .addCase(deletePost.pending, (state) => {
+      .addCase(deleteComment.pending, (state) => {
         state.status = EnumStatusTypes.loading;
       })
-      .addCase(deletePost.fulfilled, (state, action) => {
+      .addCase(deleteComment.fulfilled, (state, action) => {
         state.status = EnumStatusTypes.succeeded;
         const postId = action.payload;
-        state.posts = state.posts.filter((post) => post.id !== postId);
+
+        state.comments = state.comments.filter((post) => post.id !== postId);
       })
-      .addCase(deletePost.rejected, (state, action) => {
+      .addCase(deleteComment.rejected, (state, action) => {
         state.status = EnumStatusTypes.failed;
         state.error = action.error.message ?? "An error occurred.";
       });
