@@ -57,6 +57,26 @@ Now that you have successfully run the app, let's modify it.
 
    For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
 
+## Create Android APK
+run 
+
+Step 1: Go to the root of the project in the terminal and run the below command:
+
+```bash
+react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
+```
+Step 2: Go to android directory:
+```bash
+cd android
+```
+Step 3: Now in this android folder, run this command
+```bash
+./gradlew assembleDebug
+```
+There! you’ll find the apk file in the following path:
+```bash
+yourProject/android/app/build/outputs/apk/debug/app-debug.apk
+```
 ## Congratulations! :tada:
 
 You've successfully run and modified your React Native App. :partying_face:
