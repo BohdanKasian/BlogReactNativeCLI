@@ -1,21 +1,21 @@
 import * as React from "react";
 import { TouchableOpacity, TouchableWithoutFeedbackProps } from "react-native";
+import { Surface } from "react-native-paper";
+import { EditedContent, EditedContentProps } from "../editedContent/EditedContent";
+import { PostType } from "../../../types/allPosts";
 import { mainStyles } from "../../styles/main";
-import { postCartStyles } from "./PostCartStyles";
 import { offsetsStyles } from "../../styles/Offsets";
 import { borderRadiusStyle } from "../../styles/BorderRadiusStyle";
-import { Surface } from "react-native-paper";
-import { PostType } from "../../../types/allPosts";
-import { EditedContent, EditedContentProps } from "../editedContent/EditedContent";
+import { postCartStyles } from "./PostCartStyles";
 
 type PostCardTypes = {
   index: number;
   onPress: () => void;
-} & Omit<PostType, "id"> &
+} & PostType &
   EditedContentProps &
-  TouchableWithoutFeedbackProps;
+  Omit<TouchableWithoutFeedbackProps, "id">;
 
-export const PostCard = ({ index, onPress, onEdit, onRemove, onEditDone, isEdit, title, body }: PostCardTypes) => {
+export const PostCard = ({ index, onPress, onRemove, onEditDone, id, title, body }: PostCardTypes) => {
   return (
     <TouchableOpacity onPress={onPress}>
       <Surface
@@ -28,14 +28,7 @@ export const PostCard = ({ index, onPress, onEdit, onRemove, onEditDone, isEdit,
           postCartStyles.container,
         ]}
       >
-        <EditedContent
-          body={body}
-          title={title}
-          isEdit={isEdit}
-          onEdit={onEdit}
-          onRemove={onRemove}
-          onEditDone={onEditDone}
-        />
+        <EditedContent id={id} body={body} title={title} onRemove={onRemove} onEditDone={onEditDone} />
       </Surface>
     </TouchableOpacity>
   );

@@ -1,57 +1,77 @@
 /* eslint-disable react-native/no-inline-styles */
 import * as React from "react";
+import { useCallback, useEffect } from "react";
+import { FlatList, View } from "react-native";
+import { useDispatch, useSelector } from "react-redux";
 import { RootStackScreenProps, ScreensList } from "../../navigation/types";
-import { mainStyles } from "../../styles/main";
+import { useNavigation } from "@react-navigation/native";
+import { deletePost, updatePost } from "../../api/postsThunk";
+import { fetchPosts } from "../../api/postsThunk";
 import { PostListFooter } from "../../components/postCard/PostListFooter";
 import { Loading } from "../../components/loading/Loading";
-import { FlatList, View } from "react-native";
 import { PostCard } from "../../components/postCard/PostCard";
-import { PostType } from "../../../types/allPosts";
 import { EmptyList } from "../../components/shared/EmptyList/EmptyList";
 import { AddNewPost } from "../../components/addNewPost/AddNewPost";
-import { useNavigation } from "@react-navigation/native";
+import { TextCustom } from "../../components/shared/text/TextCustom";
+import { PostType } from "../../../types/allPosts";
+import { AppRootState } from "../../redux/store";
+import { EnumStatusTypes } from "../../../types/statusType";
+import { onEditDoneType } from "../../components/editedContent/EditedContent";
+import { mainStyles } from "../../styles/main";
 
-const data = [{ id: "1", title: "First", body: "body text" }];
-
-export const MainScreen = ({}: RootStackScreenProps<ScreensList.Root>) => {
+export const MainScreen = ({}: RootStackScreenProps<ScreensList.Main>) => {
   const navigation = useNavigation();
+  const dispatch = useDispatch();
+  const { posts, status, error } = useSelector((state: AppRootState) => state.allPosts);
+
+  useEffect(() => {
+    dispatch(fetchPosts());
+  }, []);
+
+  const onDelete = (postId: number) => () => {
+    dispatch(deletePost(postId));
+  };
+
+  const onUpdatePost: onEditDoneType = (post) => () => {
+    dispatch(updatePost(post));
+  };
+
   const onPressPost = (post: PostType) => () => {
     navigation.navigate(ScreensList.PostOverview, post);
   };
 
-  const renderPostsItems = (item: { item: PostType; index: number }) => {
-    return (
+  const renderPostsItems = useCallback(
+    (item: { item: PostType; index: number }) => (
       <PostCard
-        onEdit={() => {}}
-        onRemove={() => {}}
-        onEditDone={() => {}}
+        onRemove={onDelete}
+        onEditDone={onUpdatePost}
         onPress={onPressPost(item.item)}
         index={item.index}
         {...item.item}
       />
-    );
-  };
-
+    ),
+    []
+  );
   return (
     <>
       <AddNewPost />
       <View style={[mainStyles.justifyBetween, mainStyles.flex1]}>
         <FlatList
-          data={data}
+          data={posts}
           renderItem={renderPostsItems}
-          // style={screenStyles.remindersList}
           contentContainerStyle={{
-            justifyContent: data?.length ? "flex-start" : "center",
-            flex: data?.length ? 0 : 1,
+            justifyContent: posts?.length ? "flex-start" : "center",
+            flex: posts?.length ? 0 : 1,
           }}
           keyExtractor={(item) => item?.id + item.title}
           onEndReachedThreshold={0.3}
-          ListFooterComponent={data?.length ? <PostListFooter /> : undefined}
+          ListFooterComponent={posts?.length ? <PostListFooter /> : undefined}
           ListEmptyComponent={<EmptyList />}
         />
         <View></View>
       </View>
-      {false && <Loading />}
+      {status === EnumStatusTypes.loading && <Loading />}
+      {error && <TextCustom size="h1" title={error || "Error"} />}
     </>
   );
 };

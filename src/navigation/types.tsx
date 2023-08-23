@@ -19,12 +19,14 @@ declare global {
 export enum ScreensList {
   //Public screens
   Root = "root",
+  Main = "main",
   PostOverview = "posts/:{id}",
 }
 
 export type RootStackParamList = {
   //Public screens
-  [ScreensList.Root]: NavigatorScreenParams<RootTabParamList> | undefined;
+  [ScreensList.Root]: undefined;
+  [ScreensList.Main]: NavigatorScreenParams<RootTabParamList> | undefined;
   [ScreensList.PostOverview]: PostType;
 };
 
@@ -35,7 +37,7 @@ export type RootStackScreenProps<Screen extends keyof RootStackParamList> = Nati
 
 export type RootTabParamList = {
   //Public screens
-  [ScreensList.Root]: undefined;
+  [ScreensList.Main]: undefined;
 };
 
 export type RootTabScreenProps<Screen extends keyof RootTabParamList> = CompositeScreenProps<
