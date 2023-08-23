@@ -1,16 +1,16 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { AnyAction, CombinedState, combineReducers, configureStore } from "@reduxjs/toolkit";
-import allCarts from "./reducers/allCarts";
-import { AllCartsType } from "../../types/allCarts";
+import allPosts from "./reducers/allPosts";
+import { AllPostsType } from "../../types/allPosts";
 
 const combinedReducer = combineReducers({
-  allCarts: allCarts,
+  allPosts: allPosts,
 });
 
 const rootReducer = (
   state:
     | CombinedState<{
-        allCarts: { carts: AllCartsType };
+        allPosts: { posts: AllPostsType };
       }>
     | undefined,
   action: AnyAction

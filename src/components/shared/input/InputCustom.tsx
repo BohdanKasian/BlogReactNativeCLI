@@ -6,6 +6,7 @@ import { inputStyles } from "./InputStyles";
 import { $radius_sm } from "../../../constants/BorderRadius";
 import { mainStyles } from "../../../styles/main";
 import { offsetsStyles } from "../../../styles/Offsets";
+import colors from "../../../constants/Colors";
 
 export type InputCustomProps = Omit<TextInputProps, "theme"> & {
   bgColor?: string;
@@ -50,7 +51,7 @@ export const InputCustom: React.FC<InputCustomProps> = React.forwardRef(
         }
       : {};
 
-    const inputBackgroundColor = bgColor ? { background: bgColor } : {};
+    const inputBackgroundColor = bgColor ? { background: bgColor } : { background: colors.light.background };
 
     return (
       <>
@@ -64,7 +65,6 @@ export const InputCustom: React.FC<InputCustomProps> = React.forwardRef(
           theme={{
             roundness: $radius_sm,
             colors: {
-              text: Colors.light.text,
               ...inputBackgroundColor,
             },
           }}
@@ -72,6 +72,7 @@ export const InputCustom: React.FC<InputCustomProps> = React.forwardRef(
           activeOutlineColor={Colors.light.brandMain}
           style={[inputStyles.style, multilineInputProps.style, style]}
           maxLength={maxLength}
+          textColor={Colors.light.text}
           {...multilineInputProps}
           {...props}
         />

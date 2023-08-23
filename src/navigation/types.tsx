@@ -6,6 +6,7 @@
 import { BottomTabScreenProps } from "@react-navigation/bottom-tabs";
 import { CompositeScreenProps, NavigatorScreenParams } from "@react-navigation/native";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { PostType } from "../../types/allPosts";
 
 declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
@@ -24,7 +25,7 @@ export enum ScreensList {
 export type RootStackParamList = {
   //Public screens
   [ScreensList.Root]: NavigatorScreenParams<RootTabParamList> | undefined;
-  [ScreensList.PostOverview]: undefined;
+  [ScreensList.PostOverview]: PostType;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
@@ -35,7 +36,6 @@ export type RootStackScreenProps<Screen extends keyof RootStackParamList> = Nati
 export type RootTabParamList = {
   //Public screens
   [ScreensList.Root]: undefined;
-  [ScreensList.PostOverview]: undefined;
 };
 
 export type RootTabScreenProps<Screen extends keyof RootTabParamList> = CompositeScreenProps<

@@ -46,20 +46,10 @@ export const mainStyles = StyleSheet.create({
     justifyContent: "center",
     width: "100%",
   },
+  mainBgColor: {
+    backgroundColor: Colors.light.background,
+  },
   row: {
     flexDirection: "row",
-  },
-  snackBarCenter: {
-    paddingTop: 4,
-  },
-  snackBarContainer: {
-    marginBottom: 100,
-    marginLeft: $space_lg,
-    marginVertical: 0,
-  },
-  snackBarMain: {
-    backgroundColor: Colors.light.lessBlack,
-    borderRadius: 12,
-    margin: 0,
   },
 });

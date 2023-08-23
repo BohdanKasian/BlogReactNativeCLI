@@ -18,6 +18,7 @@ const MyTheme = {
   ...DefaultTheme,
   colors: {
     ...DefaultTheme.colors,
+    text: colors.light.text,
     background: colors.light.background,
   },
 };

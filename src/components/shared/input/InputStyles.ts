@@ -3,7 +3,7 @@ import Colors from "../../../constants/Colors";
 
 export const inputStyles = StyleSheet.create({
   style: {
-    backgroundColor: Colors.light.gray1,
+    backgroundColor: Colors.light.background,
     height: 56,
     minHeight: 56,
     textAlign: "auto",
