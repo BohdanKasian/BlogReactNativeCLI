@@ -21,8 +21,13 @@ export const AddNewPost = () => {
   };
   return (
     <Layout style={{ flex: 0 }}>
-      <InputCustom label="Title" value={newPost.title} onChangeText={onChange(PostFieldsEnum.title)} />
-      <InputCustom multilineLabel="Body" value={newPost.body} multiline onChangeText={onChange(PostFieldsEnum.body)} />
+      <InputCustom
+        label="Title"
+        accessibilityLabel="Title"
+        value={newPost.title}
+        onChangeText={onChange(PostFieldsEnum.title)}
+      />
+      <InputCustom accessibilityLabel="Body" multilineLabel="Body" value={newPost.body} multiline onChangeText={onChange(PostFieldsEnum.body)} />
       <Button
         title="Create new post"
         onPress={onCreatePost}

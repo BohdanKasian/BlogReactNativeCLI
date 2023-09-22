@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0076CE48D6F737781F26C3EE /* libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B5D9B2C8EE0396E5E98B3C /* libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a */; };
 		00E356F31AD99517003FC87E /* TestTaskBohdanKasianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TestTaskBohdanKasianTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		24DA6890B2A86617ED5857B2 /* libPods-TestTaskBohdanKasian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C402C953E28F5F2CE88C3A8 /* libPods-TestTaskBohdanKasian.a */; };
-		5EEB186375BB986DFE06992C /* libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA91A2BEEAA651C93DC8653B /* libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a */; };
+		5AFAD1F31F001F2049D2EA03 /* libPods-TestTaskBohdanKasian.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5100BA60DA56922B4FDBCFF1 /* libPods-TestTaskBohdanKasian.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -36,13 +36,13 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TestTaskBohdanKasian/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TestTaskBohdanKasian/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TestTaskBohdanKasian/main.m; sourceTree = "<group>"; };
-		4C402C953E28F5F2CE88C3A8 /* libPods-TestTaskBohdanKasian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTaskBohdanKasian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ED5218E24C68A280D1D5243 /* Pods-TestTaskBohdanKasian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskBohdanKasian.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskBohdanKasian/Pods-TestTaskBohdanKasian.debug.xcconfig"; sourceTree = "<group>"; };
-		7810837BD6DC3921F103140D /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.release.xcconfig"; path = "Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.release.xcconfig"; sourceTree = "<group>"; };
+		230C93C523E0FA3852D56180 /* Pods-TestTaskBohdanKasian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskBohdanKasian.release.xcconfig"; path = "Target Support Files/Pods-TestTaskBohdanKasian/Pods-TestTaskBohdanKasian.release.xcconfig"; sourceTree = "<group>"; };
+		3E56C4BD2C295627F88A2BC1 /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.debug.xcconfig"; sourceTree = "<group>"; };
+		40CABAB62FBB67BA4E113CFC /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.release.xcconfig"; path = "Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.release.xcconfig"; sourceTree = "<group>"; };
+		5100BA60DA56922B4FDBCFF1 /* libPods-TestTaskBohdanKasian.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTaskBohdanKasian.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79634FEE7BB494CCA57F86B1 /* Pods-TestTaskBohdanKasian.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskBohdanKasian.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskBohdanKasian/Pods-TestTaskBohdanKasian.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TestTaskBohdanKasian/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A5AE29A152F38D226623B98B /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.debug.xcconfig"; path = "Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BA91A2BEEAA651C93DC8653B /* libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9D8B3E9023D1F054F7AE5FC /* Pods-TestTaskBohdanKasian.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTaskBohdanKasian.release.xcconfig"; path = "Target Support Files/Pods-TestTaskBohdanKasian/Pods-TestTaskBohdanKasian.release.xcconfig"; sourceTree = "<group>"; };
+		D9B5D9B2C8EE0396E5E98B3C /* libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EEB186375BB986DFE06992C /* libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a in Frameworks */,
+				0076CE48D6F737781F26C3EE /* libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24DA6890B2A86617ED5857B2 /* libPods-TestTaskBohdanKasian.a in Frameworks */,
+				5AFAD1F31F001F2049D2EA03 /* libPods-TestTaskBohdanKasian.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				4C402C953E28F5F2CE88C3A8 /* libPods-TestTaskBohdanKasian.a */,
-				BA91A2BEEAA651C93DC8653B /* libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a */,
+				5100BA60DA56922B4FDBCFF1 /* libPods-TestTaskBohdanKasian.a */,
+				D9B5D9B2C8EE0396E5E98B3C /* libPods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,10 +140,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5ED5218E24C68A280D1D5243 /* Pods-TestTaskBohdanKasian.debug.xcconfig */,
-				D9D8B3E9023D1F054F7AE5FC /* Pods-TestTaskBohdanKasian.release.xcconfig */,
-				A5AE29A152F38D226623B98B /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.debug.xcconfig */,
-				7810837BD6DC3921F103140D /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.release.xcconfig */,
+				79634FEE7BB494CCA57F86B1 /* Pods-TestTaskBohdanKasian.debug.xcconfig */,
+				230C93C523E0FA3852D56180 /* Pods-TestTaskBohdanKasian.release.xcconfig */,
+				3E56C4BD2C295627F88A2BC1 /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.debug.xcconfig */,
+				40CABAB62FBB67BA4E113CFC /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -155,12 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TestTaskBohdanKasianTests" */;
 			buildPhases = (
-				8B6787DA9C9D124C9ACB7D10 /* [CP] Check Pods Manifest.lock */,
+				301775A0DBFA3D89B6382CDA /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				A950170E4E37DE5A831843CF /* [CP] Embed Pods Frameworks */,
-				57436552228576A7CF0EB45E /* [CP] Copy Pods Resources */,
+				7FDF1F78EB48456DACB94E6F /* [CP] Embed Pods Frameworks */,
+				9F6168B023A650B918752A61 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +176,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TestTaskBohdanKasian" */;
 			buildPhases = (
-				3D76F14D09EA0E92607E0172 /* [CP] Check Pods Manifest.lock */,
+				710573CD53855E4913DEC169 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				118EDEDD3D6BE9FE28FFEF4D /* [CP] Embed Pods Frameworks */,
-				B9B3C0DED0791911BEB48F7A /* [CP] Copy Pods Resources */,
+				35D47D2C87F425F5343AD6A2 /* [CP] Embed Pods Frameworks */,
+				BDB761FAAEE8ABCCA46FF889 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -266,63 +266,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		118EDEDD3D6BE9FE28FFEF4D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian/Pods-TestTaskBohdanKasian-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian/Pods-TestTaskBohdanKasian-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian/Pods-TestTaskBohdanKasian-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3D76F14D09EA0E92607E0172 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TestTaskBohdanKasian-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57436552228576A7CF0EB45E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8B6787DA9C9D124C9ACB7D10 /* [CP] Check Pods Manifest.lock */ = {
+		301775A0DBFA3D89B6382CDA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,7 +288,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A950170E4E37DE5A831843CF /* [CP] Embed Pods Frameworks */ = {
+		35D47D2C87F425F5343AD6A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian/Pods-TestTaskBohdanKasian-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian/Pods-TestTaskBohdanKasian-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian/Pods-TestTaskBohdanKasian-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		710573CD53855E4913DEC169 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestTaskBohdanKasian-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FDF1F78EB48456DACB94E6F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,7 +344,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B9B3C0DED0791911BEB48F7A /* [CP] Copy Pods Resources */ = {
+		9F6168B023A650B918752A61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests/Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDB761FAAEE8ABCCA46FF889 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -430,7 +430,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5AE29A152F38D226623B98B /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.debug.xcconfig */;
+			baseConfigurationReference = 3E56C4BD2C295627F88A2BC1 /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -457,7 +457,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7810837BD6DC3921F103140D /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.release.xcconfig */;
+			baseConfigurationReference = 40CABAB62FBB67BA4E113CFC /* Pods-TestTaskBohdanKasian-TestTaskBohdanKasianTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -481,7 +481,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ED5218E24C68A280D1D5243 /* Pods-TestTaskBohdanKasian.debug.xcconfig */;
+			baseConfigurationReference = 79634FEE7BB494CCA57F86B1 /* Pods-TestTaskBohdanKasian.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -508,7 +508,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9D8B3E9023D1F054F7AE5FC /* Pods-TestTaskBohdanKasian.release.xcconfig */;
+			baseConfigurationReference = 230C93C523E0FA3852D56180 /* Pods-TestTaskBohdanKasian.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
